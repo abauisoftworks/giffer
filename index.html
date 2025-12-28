@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:type" content="video.other">
+    <meta property="og:image:type" content="image/gif">
+    <meta name="twitter:card" content="summary_large_image">
+    <script>
+        const path = window.location.pathname.replace('/', '');
+        if (path === 'skid' || path === 'skid2') {
+            const gifUrl = window.location.origin + '/' + path + '.gif';
+            document.head.innerHTML += `<meta property="og:image" content="${gifUrl}">`;
+            window.location.replace(gifUrl);
+        }
+    </script>
+</head>
+<body style="background: #2c2f33;"></body>
+</html>
