@@ -4,5 +4,16 @@
       "source": "/:filename",
       "destination": "/:filename.gif"
     }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/gif"
+        }
+      ]
+    }
   ]
 }
