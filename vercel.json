@@ -1,27 +1,26 @@
 {
-  "redirects": [
+  "cleanUrls": false,
+  "rewrites": [
     {
       "source": "/skid",
-      "destination": "/skid.gif",
-      "permanent": true
+      "destination": "/skid.gif"
     },
     {
       "source": "/skid2",
-      "destination": "/skid2.gif",
-      "permanent": true
+      "destination": "/skid2.gif"
     }
   ],
   "headers": [
     {
-      "source": "/(.*).gif",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Content-Type",
           "value": "image/gif"
         },
         {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
+          "key": "Accept-Ranges",
+          "value": "bytes"
         }
       ]
     }
