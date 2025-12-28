@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/:filename",
+      "destination": "/:filename.gif"
+    }
+  ]
+}
