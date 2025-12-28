@@ -1,19 +1,16 @@
 {
   "rewrites": [
-    {
-      "source": "/:filename",
-      "destination": "/:filename.gif"
-    }
+    { "source": "/skid", "destination": "/skid.gif" },
+    { "source": "/skid2", "destination": "/skid2.gif" }
   ],
   "headers": [
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "image/gif"
-        }
-      ]
+      "source": "/skid",
+      "headers": [{ "key": "Content-Type", "value": "image/gif" }]
+    },
+    {
+      "source": "/skid2",
+      "headers": [{ "key": "Content-Type", "value": "image/gif" }]
     }
   ]
 }
