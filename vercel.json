@@ -2,8 +2,8 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/:LIVE.mp4",
-      "destination": "/:live"
+      "source": "/live",
+      "destination": "/LIVE.mp4"
     }
   ]
 }
